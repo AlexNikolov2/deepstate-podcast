@@ -1,6 +1,7 @@
 .App{
   background-color: rgb(20, 20, 20);
   color: rgb(252, 252, 252);
+  height: 2000px; /* test height, so I can see how it displays on the screen*/
 }
 .sphere{
   background-color: rgb(20, 20, 20);

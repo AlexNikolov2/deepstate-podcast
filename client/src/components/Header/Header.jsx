@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import image from "../../assets/img/Untitled.png"
+import './Header.css'
 
 export const HeaderComponent = () => {
     return (
