@@ -5,7 +5,10 @@ function App() {
   return (
     <div className="App">
         <HeaderComponent></HeaderComponent>
-      <h1>site</h1>
+        <div className="colors">
+          <h2>Background color: rgb(20, 20, 20) <div className="sphere"></div></h2>
+          <h2>Main text color: rgb(252, 252, 252) <div className="white"></div></h2>
+        </div>
     </div>
   );
 }
