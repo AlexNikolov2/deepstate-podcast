@@ -1,9 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
+import image from "../../assets/img/Untitled.png"
+
 export const HeaderComponent = () => {
     return (
         <header>
             <section className="left">
-                 {/* image as a logo on the left */}
+                 <img src={image} alt="" />
                  <h2>Дълбоката държава</h2>
             </section>
             <section className="right">
