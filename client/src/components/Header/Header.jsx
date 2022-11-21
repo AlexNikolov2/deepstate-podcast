@@ -1,7 +1,17 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 export const HeaderComponent = () => {
     return (
         <header>
-            <h1>content</h1>
+            <section className="left">
+
+            </section>
+            <section className="right">
+                <ul>
+                    <li><a href="/"></a></li>
+                    <li><a href="/"></a></li>
+                    <li><a href="/"></a></li>
+                </ul>
+            </section>
         </header>
     )
 }
