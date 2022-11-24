@@ -1,22 +1,3 @@
-header{
-    display: flex;
-    justify-content: space-around;
-}
-.left, .right {
-    display: flex;
-    align-items: center;
-}
-.left{
-    gap: 9px;
-}
-.right ul{
-    display: flex;
-    justify-content: space-around;
-    gap: 12px;
-}
-li{
-    list-style-type: none;
-}
 a{
     text-decoration: none;
 }

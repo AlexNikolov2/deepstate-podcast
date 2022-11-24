@@ -4,13 +4,13 @@ import './Header.css'
 
 export const HeaderComponent = () => {
     return (
-        <header>
-            <section className="left">
+        <header className="flex flex-row justify-around">
+            <section className="flex flex-row content-center gap-2">
                  <img src={image} alt="" />
                  <h2>Дълбоката държава</h2>
             </section>
-            <section className="right">
-                <ul>
+            <section className="flex flex-row content-center">
+                <ul className="flex flex-row justify-around gap-3 list-none">
                     <li><a href="/">Начална страница</a></li>
                     <li><a href="/">Епизоди</a></li>
                     <li><a href="/">Гости</a></li>
