@@ -26,7 +26,7 @@ export const HeaderComponent = () => {
           </li>
         </ul>
       </section>
-      <button className="icon" onClick={myFunction}>
+      <button className="icon" onClick={myFunction} id="button">
         <i className="fa fa-bars"></i>
       </button>
     </header>

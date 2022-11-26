@@ -4,19 +4,12 @@ a{
 img{
     width: 60px;
 }
-#navbar {
+
+
+
+  button{
     display: none;
   }
-
-button {
-    color: white;
-    padding: 14px 16px;
-    border: none;
-    text-decoration: none;
-    font-size: 28px;
-    display: block;
-  }
-  
   /* Style the hamburger menu */
   .icon{
     box-shadow: none
@@ -40,4 +33,15 @@ button {
         flex-direction: row;
         align-items: center;
     }
+    button {
+        color: white;
+        padding: 14px 16px;
+        border: none;
+        text-decoration: none;
+        font-size: 28px;
+        display: block;
+      }
+      #navbar {
+        display: none;
+      }
 }
