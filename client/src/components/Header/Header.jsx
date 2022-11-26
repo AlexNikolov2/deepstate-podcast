@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import image from "../../assets/img/Untitled.png";
 import "./Header.css";
-import { myFunction } from "./navButton";
+import { myFunction } from "./utils/navButton";
 
 export const HeaderComponent = () => {
   return (
