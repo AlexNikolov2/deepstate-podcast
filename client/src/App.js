@@ -1,4 +1,5 @@
 import './App.css';
+import { FooterComponent } from './components/Footer/Footer';
 import { HeaderComponent } from './components/Header/Header';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
           <h2>Background color: rgb(20, 20, 20) <div className="sphere"></div></h2>
           <h2>Main text color: rgb(252, 252, 252) <div className="white"></div></h2>
         </div>
+        <FooterComponent></FooterComponent>
     </div>
   );
 }
