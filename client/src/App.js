@@ -1,15 +1,13 @@
 import './App.css';
 import { FooterComponent } from './components/Footer/Footer';
 import { HeaderComponent } from './components/Header/Header';
+import { HomePage } from './pages/home/HomePage';
 
 function App() {
   return (
     <div className="App">
         <HeaderComponent></HeaderComponent>
-        <div className="colors">
-          <h2>Background color: rgb(20, 20, 20) <div className="sphere"></div></h2>
-          <h2>Main text color: rgb(252, 252, 252) <div className="white"></div></h2>
-        </div>
+        <HomePage></HomePage>
         <FooterComponent></FooterComponent>
     </div>
   );
