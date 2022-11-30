@@ -5,6 +5,5 @@ describe('It should properly render a Header component', () => {
     test('should render Header component', () => {
         render(<HeaderComponent />);
      })
-    
 });
 
