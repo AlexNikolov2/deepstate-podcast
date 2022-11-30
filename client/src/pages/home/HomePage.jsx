@@ -1,5 +1,12 @@
 export const HomePage = () => {
     return (
-        <p>Home page works!</p>
+        <div id="home-page">
+            <section id="main-header">
+
+            </section>
+            <section id="main-items">
+
+            </section>
+        </div>
     )
 }
