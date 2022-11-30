@@ -15,7 +15,17 @@ export const HomePage = () => {
           </p>
         </div>
       </section>
-      <section id="main-items"></section>
+      <section id="main-items">
+        <div id="item">
+
+        </div>
+        <div id="item">
+            
+        </div>
+        <div id="item">
+            
+        </div>
+      </section>
     </div>
   );
 };
