@@ -6,6 +6,9 @@
 }
 #image{
     position: relative;
+    width: 70%;
+    filter: brightness(78%);
+    display:block;
 }
 #main-header-text{
     position: absolute;  
@@ -17,6 +20,8 @@
     flex-direction: column;
     gap: 27px;
     text-align: center;
+
+    
 }
 #title{
     display: flex;
@@ -31,4 +36,18 @@ h3{
 }
 #header-text{
     font-size: 19px;
+}
+
+@media (max-width: 1024px){
+
+       h1,h3, #header-text{
+            font-size: inherit;
+       }
+
+       #main-header-text{
+        gap: 0px;
+       }
+}
+@media (max-width: 768px){
+
 }
