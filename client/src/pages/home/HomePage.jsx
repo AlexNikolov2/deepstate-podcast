@@ -1,10 +1,13 @@
+import image from '../../assets/img/home-header.jpeg'
+import './HomePage.css'
+
 export const HomePage = () => {
   return (
-    <div id="home-page">
-      <section id="main-header">
-        <img src="" alt="" />
+    <div>
+      <section className="relative flex flex-col justify-center content-center" id="main-header">
+        <img src={image} alt="" id='image' className='w-full'/>
         <div id="main-header-text">
-          <h1>Алтернативният подкаст.</h1>
+          <h1 className="absolute left-11">Алтернативният подкаст.</h1>
           <h3>Където различните мнения имат своето място.</h3>
           <p>
             Подкастът "Дълбоката държава" има за цел да накара съвременното
