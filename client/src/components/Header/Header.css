@@ -1,11 +1,10 @@
 a{
     text-decoration: none;
 }
-img{
-    width: 60px;
+
+#img-nav{
+  width: 60px;
 }
-
-
 
   button{
     display: none;
@@ -28,7 +27,6 @@ img{
   }
 
 @media (max-width: 768px) {
-    /*I should try and make a dropdown for the navigation*/
     header.flex.flex-row.justify-around{
         flex-direction: row;
         align-items: center;

@@ -7,7 +7,7 @@ export const HeaderComponent = () => {
   return (
     <header className="flex flex-row justify-around" id="header">
       <section className="flex flex-row content-center gap-2">
-        <img src={image} alt="" className="" />
+        <img src={image} alt="" className="w-16" id="img-nav"/>
         <h2>Дълбоката държава</h2>
       </section>
       <section className="flex flex-row content-center">
