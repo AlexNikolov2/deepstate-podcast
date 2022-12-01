@@ -1,15 +1,18 @@
-import image from '../../assets/img/home-header.jpeg'
-import './HomePage.css'
+import image from "../../assets/img/home-header.jpeg";
+import "./HomePage.css";
 
 export const HomePage = () => {
   return (
     <div>
-      <section className="relative flex flex-col justify-center content-center" id="main-header">
-        <img src={image} alt="" id='image' className='w-full'/>
+      <section id="main-header">
+        <img src={image} alt="" id="image" className="w-full" />
         <div id="main-header-text">
-          <h1 className="absolute left-11">Алтернативният подкаст.</h1>
+          <div id="title">
+            <h1>А Л Т Е Р Н А Т И В Н И Я Т</h1>
+            <h1>П О Д К А С Т</h1>
+          </div>
           <h3>Където различните мнения имат своето място.</h3>
-          <p>
+          <p id="header-text">
             Подкастът "Дълбоката държава" има за цел да накара съвременното
             общество да се замисли относно това в какъв свят живеем. Във всеки
             епизод водещият Алекс Николов кани различни гости, с които да
