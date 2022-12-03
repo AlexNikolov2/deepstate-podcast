@@ -21,7 +21,6 @@
     "eject": "react-scripts eject",
     "lint": "eslint -c .eslintrc.js --ext .js,.jsx .",
     "lint:fix": "npm run lint -- --fix"
-
   },
   "browserslist": {
     "production": [
@@ -35,7 +34,15 @@
       "last 1 safari version"
     ]
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "prettier"
+    ]
+  },
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "prettier": "^2.8.0"
   }
 }
