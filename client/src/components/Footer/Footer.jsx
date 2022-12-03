@@ -1,7 +1,7 @@
 import "./Footer.css";
 
 export const FooterComponent = () => {
-  return (
+  /*return (
     <footer className="flex justify-around items-center content-center">
       <section className="">
         <h4>Дълбоката Държава</h4>
@@ -22,5 +22,5 @@ export const FooterComponent = () => {
         <p>Project for ABLE Mentor S18.</p>
       </section>
     </footer>
-  );
+  );*/
 };
