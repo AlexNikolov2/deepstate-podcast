@@ -1,4 +1,4 @@
-import image from "../../assets/img/home-header.jpeg";
+//import image from "../../assets/img/home-header.jpeg";
 import "./HomePage.css";
 
 export const HomePage = () => {
