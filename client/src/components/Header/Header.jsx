@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import image from "../../assets/img/Untitled.png";
-import "./Header.css";
+//import "./Header.css";
 import { myFunction } from "./utils/navButton";
 
 export const HeaderComponent = () => {
@@ -12,7 +12,7 @@ export const HeaderComponent = () => {
       </section>
       <section className="flex flex-row content-center">
         <ul
-          className="flex flex-row justify-around gap-3 list-none"
+          className="none md:flex flex-row justify-around gap-3 list-none"
           id="navbar"
         >
           <li>
@@ -26,7 +26,7 @@ export const HeaderComponent = () => {
           </li>
         </ul>
       </section>
-      <button className="icon" onClick={myFunction} id="button">
+      <button className="block md:none" onClick={myFunction} id="button">
         <i className="fa fa-bars"></i>
       </button>
     </header>

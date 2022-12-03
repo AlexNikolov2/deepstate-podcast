@@ -1,8 +1,8 @@
-import image from "../../assets/img/home-header.jpeg";
+//import image from "../../assets/img/home-header.jpeg";
 import "./HomePage.css";
 
 export const HomePage = () => {
-  return (
+  /*return (
     <div>
       <section id="main-header">
         <img src={image} alt="" id="image" className="w-full" />
@@ -23,7 +23,7 @@ export const HomePage = () => {
       </section>
       <section id="main-items">
         <div id="item">
-          <i></i> {/*font awesome icon */}
+          <i></i> 
           <h3>Епизоди</h3>
           <p>
             В този сайт можете да намерите всички епизоди от подкаста "Дълбоката
@@ -31,7 +31,7 @@ export const HomePage = () => {
           </p>
         </div>
         <div id="item">
-          <i></i> {/*font awesome icon */}
+          <i></i> 
           <h3>Гости</h3>
           <p>
             В този сайт можете да намерите всички информация относно всички,
@@ -39,7 +39,7 @@ export const HomePage = () => {
           </p>
         </div>
         <div id="item">
-          <i></i> {/*font awesome icon */}
+          <i></i>
           <h3>Форум</h3>
           <p>
             Свободно място за дискусии, където да обсъждате теми, които не се
@@ -48,5 +48,5 @@ export const HomePage = () => {
         </div>
       </section>
     </div>
-  );
+  );*/
 };
