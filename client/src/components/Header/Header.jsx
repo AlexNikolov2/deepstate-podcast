@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-import image from "../../assets/img/Untitled.png";
+//import image from "../../assets/img/Untitled.png";
 //import "./Header.css";
-import { myFunction } from "./utils/navButton";
+//import { myFunction } from "./utils/navButton";
 
 export const HeaderComponent = () => {
-  return (
+  /*return (
     <header className="flex flex-row justify-around" id="header">
       <section className="flex flex-row content-center gap-2">
         <img src={image} alt="" className="w-16" id="img-nav"/>
@@ -30,5 +30,5 @@ export const HeaderComponent = () => {
         <i className="fa fa-bars"></i>
       </button>
     </header>
-  );
+  );*/
 };
