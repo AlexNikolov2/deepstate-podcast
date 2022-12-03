@@ -1,5 +1,5 @@
-//import image from "../../assets/img/home-header.jpeg";
-import "./HomePage.css";
+//import image from '../../assets/img/home-header.jpeg';
+import './HomePage.css';
 
 export const HomePage = () => {
   /*return (
@@ -23,7 +23,7 @@ export const HomePage = () => {
       </section>
       <section id="main-items">
         <div id="item">
-          <i></i> 
+          <i></i>
           <h3>Епизоди</h3>
           <p>
             В този сайт можете да намерите всички епизоди от подкаста "Дълбоката
@@ -31,7 +31,7 @@ export const HomePage = () => {
           </p>
         </div>
         <div id="item">
-          <i></i> 
+          <i></i>
           <h3>Гости</h3>
           <p>
             В този сайт можете да намерите всички информация относно всички,
