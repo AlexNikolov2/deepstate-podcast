@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 //import image from "../../assets/img/Untitled.png";
 //import "./Header.css";
-//import { myFunction } from "./utils/navButton";
+//import { hamburger } from "./utils/navButton";
 
 export const HeaderComponent = () => {
   /*return (
@@ -26,7 +26,7 @@ export const HeaderComponent = () => {
           </li>
         </ul>
       </section>
-      <button className="block md:none" onClick={myFunction} id="button">
+      <button className="block md:none" onClick={hamburger} id="button">
         <i className="fa fa-bars"></i>
       </button>
     </header>
