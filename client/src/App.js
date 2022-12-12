@@ -6,9 +6,9 @@ import { HomePage } from './pages/home/HomePage';
 function App() {
   return (
     <div className="App">
-        <HeaderComponent></HeaderComponent>
-        <HomePage></HomePage>
-        <FooterComponent></FooterComponent>
+      <HeaderComponent></HeaderComponent>
+      <HomePage></HomePage>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }
