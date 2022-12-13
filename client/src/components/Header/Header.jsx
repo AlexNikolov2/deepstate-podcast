@@ -5,10 +5,10 @@ import { hamburger } from './utils/navButton';
 
 export const HeaderComponent = () => {
   return (
-    <header className="flex justify-around" id="header">
-      <div id="left" className="flex">
+    <header className="flex justify-around items-center" id="header">
+      <div id="left" className="flex items-center gap-2">
         <img src={image} alt="" className="w-20" />
-        <p className="text-3xl">Дълбоката държава</p>
+        <p className="text-4xl">Дълбоката държава</p>
       </div>
       <ul className="hidden md:flex gap-3" id="navbar">
         <li>
