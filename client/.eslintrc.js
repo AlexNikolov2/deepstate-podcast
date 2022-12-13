@@ -14,6 +14,7 @@ module.exports = {
     semi: [2, 'always'],
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
-    'space-before-function-paren': ['error', 'never']
+    'space-before-function-paren': ['error', 'never'],
+    'comma-dangle': ['error', 'never']
   }
 };
