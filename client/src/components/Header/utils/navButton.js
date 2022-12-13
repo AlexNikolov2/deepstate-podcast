@@ -1,6 +1,6 @@
 export function hamburger() {
-  var x = document.getElementById('navbar');
-  let header = document.getElementById('header');
+  const x = document.getElementById('navbar');
+  const header = document.getElementById('header');
 
   if (x.style.display === 'block') {
     x.style.display = 'none';
