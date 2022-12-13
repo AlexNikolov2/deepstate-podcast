@@ -5,10 +5,12 @@
 @import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
 
 @font-face {
-    font-family: 'Exo 2';
-    src: url('./assets/fonts/Exo2-VariableFont_wght.ttf');
+  font-family: 'Exo 2';
+  src: url('./assets/fonts/Exo2-VariableFont_wght.ttf');
 }
 
-h1,h2,h3,h4,h5,h6,a,p{
-  font-family: 'Exo 2';
+@layer components {
+  .exo-2 {
+    font-family: 'Exo 2';
+  }
 }
