@@ -1,3 +1,23 @@
+import image from '../../assets/img/Untitled.png';
+
 export const HeaderComponent = () => {
-  return <header className="bg-slate-800 exo-2 text-6xl font-bold">Ljubavi moja</header>;
+  return (
+    <header className="flex justify-around">
+      <div id="left" className="flex">
+        <img src={image} alt="" className="w-20" />
+        <p className="text-3xl">Дълбоката държава</p>
+      </div>
+      <ul className="flex gap-3">
+        <li>
+          <a href="/">Начало</a>
+        </li>
+        <li>
+          <a href="/">Епизоди</a>
+        </li>
+        <li>
+          <a href="/">Гости</a>
+        </li>
+      </ul>
+    </header>
+  );
 };

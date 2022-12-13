@@ -5,7 +5,7 @@ import { HomePage } from './pages/home/HomePage';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App exo-2">
       <HeaderComponent></HeaderComponent>
       <HomePage></HomePage>
       <FooterComponent></FooterComponent>
