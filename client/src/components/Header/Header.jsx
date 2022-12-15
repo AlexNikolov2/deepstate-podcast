@@ -10,20 +10,28 @@ export const HeaderComponent = () => {
         <img src={image} alt="" className="w-20" />
         <p className="text-4xl">Дълбоката държава</p>
       </div>
-      <ul className="hidden md:flex gap-3" id="navbar">
-        <li>
-          <a href="/">Начало</a>
-        </li>
-        <li>
-          <a href="/">Епизоди</a>
-        </li>
-        <li>
-          <a href="/">Гости</a>
-        </li>
-      </ul>
-      <button onClick={hamburger} className="md:hidden">
-        <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
-      </button>
+      <div className="flex gap-5">
+        <ul className="hidden md:flex gap-3" id="navbar">
+          <li>
+            <a href="/" className="text-xl">
+              Начало
+            </a>
+          </li>
+          <li>
+            <a href="/" className="text-xl">
+              Епизоди
+            </a>
+          </li>
+          <li>
+            <a href="/" className="text-xl">
+              Гости
+            </a>
+          </li>
+        </ul>
+        <button onClick={hamburger} className="md:hidden">
+          <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
+        </button>
+      </div>
     </header>
   );
 };
