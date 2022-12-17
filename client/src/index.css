@@ -24,4 +24,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .item-title {
+    font-size: 31px;
+    font-weight: bold;
+  }
 }
