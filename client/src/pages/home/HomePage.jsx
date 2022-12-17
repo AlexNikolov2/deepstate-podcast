@@ -1,4 +1,6 @@
+import { faComments, faPodcast, faUserTie } from '@fortawesome/free-solid-svg-icons';
 import image from '../../assets/img/home-header.jpeg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const HomePage = () => {
   return (
@@ -20,31 +22,23 @@ export const HomePage = () => {
       </section>
       <section>
         <div id="item">
-          <i></i>
-          <h3>Епизоди</h3>
+          <FontAwesomeIcon icon={faPodcast} />
+          <p>Епизоди</p>
           <p>
             В този сайт можете да намерите всички епизоди от подкаста &quot;Дълбоката държава&quot;.
           </p>
         </div>
         <div id="item">
-          <i></i>
-          <h3>Гости</h3>
+          <FontAwesomeIcon icon={faUserTie} />
+          <p>Гости</p>
           <p>
             В този сайт можете да намерите всички информация относно всички, които са били гости в
             подкаста.
           </p>
         </div>
         <div id="item">
-          <i></i>
-          <h3>Гости</h3>
-          <p>
-            В този сайт можете да намерите всички информация относно всички, които са били гости в
-            подкаста &quot;Дълбоката държава&quot;.
-          </p>
-        </div>
-        <div id="item">
-          <i></i>
-          <h3>Форум</h3>
+          <FontAwesomeIcon icon={faComments} className="text-2xl" />
+          <p className="item-title">Форум</p>
           <p>
             Свободно място за дискусии, където да обсъждате теми, които не се дискутират никъде
             другаде.
