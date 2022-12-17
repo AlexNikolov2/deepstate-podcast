@@ -13,4 +13,15 @@
   .exo-2 {
     font-family: 'Exo 2';
   }
+  .button {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .button-green {
+    @apply bg-green-700;
+  }
+  .image-header {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
