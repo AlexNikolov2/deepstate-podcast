@@ -5,7 +5,7 @@ import { hamburger } from './utils/navButton';
 
 export const HeaderComponent = () => {
   return (
-    <header className="flex justify-around items-center gap-4" id="header">
+    <header className="flex justify-around items-center gap-4" id="header" data-testid="header">
       <div id="left" className="flex items-center gap-2">
         <img src={image} alt="" className="w-20" />
         <p className="text-4xl">Дълбоката държава</p>
@@ -29,7 +29,7 @@ export const HeaderComponent = () => {
           </li>
         </ul>
         <button onClick={hamburger} className="md:hidden">
-          <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
+          <FontAwesomeIcon icon={faBars} className="text-white text-2xl" data-testid="icon" />
         </button>
       </div>
     </header>
