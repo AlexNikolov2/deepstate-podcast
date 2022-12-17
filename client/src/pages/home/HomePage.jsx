@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const HomePage = () => {
   return (
-    <main>
+    <main className="flex flex-col gap-5">
       <section>
         <img src={image} alt="opa opa adolf h*tler pak na fronta" className="image-header" />
         <section className="flex flex-col gap-5 justify-center items-center">
@@ -15,31 +15,32 @@ export const HomePage = () => {
           <p className="text-center text-3xl font-light">
             Където различните мнения имат своето място.
           </p>
-          <button type="button" className="button button-green button-header hover:bg-green-900">
+          <a
+            href="https://www.youtube.com/@user-zn4rd8oj8i"
+            className="button button-green button-header hover:bg-green-900">
             Разбери истината
-          </button>
+          </a>
         </section>
       </section>
-      <section>
-        <div id="item">
-          <FontAwesomeIcon icon={faPodcast} />
-          <p>Епизоди</p>
-          <p>
+      <section className="flex flex-col justify-center items-center gap-20 md:flex-row">
+        <div className="item">
+          <FontAwesomeIcon icon={faPodcast} className="text-6xl text-sky-400" />
+          <p className="item-title">Епизоди</p>
+          <p className="item-text">
             В този сайт можете да намерите всички епизоди от подкаста &quot;Дълбоката държава&quot;.
           </p>
         </div>
-        <div id="item">
-          <FontAwesomeIcon icon={faUserTie} />
-          <p>Гости</p>
-          <p>
-            В този сайт можете да намерите всички информация относно всички, които са били гости в
-            подкаста.
+        <div className="item">
+          <FontAwesomeIcon icon={faUserTie} className="text-6xl text-sky-400" />
+          <p className="item-title">Гости</p>
+          <p className="item-text">
+            Tук можете да намерите всички информация относно всички, които са били гости в подкаста.
           </p>
         </div>
-        <div id="item">
-          <FontAwesomeIcon icon={faComments} className="text-2xl" />
+        <div className="item">
+          <FontAwesomeIcon icon={faComments} className="text-6xl text-sky-400" />
           <p className="item-title">Форум</p>
-          <p>
+          <p className="item-text">
             Свободно място за дискусии, където да обсъждате теми, които не се дискутират никъде
             другаде.
           </p>
