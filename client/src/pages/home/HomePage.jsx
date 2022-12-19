@@ -8,8 +8,8 @@ export const HomePage = () => {
       <section className="mb-5 segoe-ui">
         <section className="flex flex-col gap-12 justify-center items-center home-header ml-auto mr-auto  ">
           <div className="flex flex-col md:flex md:flex-row md:gap-14 font-bold exo-2">
-            <p className="text-center text-4xl md:text-6xl">Д Ъ Л Б О К А Т А </p>
-            <p className="text-center text-4xl md:text-6xl">Д Ъ Р Ж А В А</p>
+            <p className="text-center text-4xl md:text-5xl">Д Ъ Л Б О К А Т А </p>
+            <p className="text-center text-4xl md:text-5xl">Д Ъ Р Ж А В А</p>
           </div>
           <p className="text-center text-3xl font-light ui-sans-serif">
             Където различните мнения имат своето място.
