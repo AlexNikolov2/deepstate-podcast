@@ -1,9 +1,9 @@
-.App{
+.App {
   background-color: rgb(10, 10, 10);
   color: rgb(252, 252, 252);
-  height: 2000px; /* test height, so I can see how it displays on the screen*/
+  height: 2000px;
 }
 
-h2{
+h2 {
   display: flex;
 }

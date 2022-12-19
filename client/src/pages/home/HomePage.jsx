@@ -1,23 +1,27 @@
 import { faComments, faPodcast, faUserTie } from '@fortawesome/free-solid-svg-icons';
-import image from '../../assets/img/home-header.jpeg';
+// import image from '../../assets/img/home-header.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const HomePage = () => {
   return (
-    <main className="flex flex-col gap-5">
-      <section>
-        <img src={image} alt="opa opa adolf h*tler pak na fronta" className="image-header" />
-        <section className="flex flex-col gap-5 justify-center items-center">
-          <div className="flex flex-col md:flex md:flex-row md:gap-14 font-bold ">
+    <main className="flex flex-col gap-5 mt-5 mb-5">
+      <section className="mb-5 segoe-ui">
+        <section className="flex flex-col gap-12 justify-center items-center home-header ml-auto mr-auto  ">
+          <div className="flex flex-col md:flex md:flex-row md:gap-14 font-bold exo-2">
             <p className="text-center text-4xl md:text-6xl">Д Ъ Л Б О К А Т А </p>
             <p className="text-center text-4xl md:text-6xl">Д Ъ Р Ж А В А</p>
           </div>
-          <p className="text-center text-3xl font-light">
+          <p className="text-center text-3xl font-light ui-sans-serif">
             Където различните мнения имат своето място.
+          </p>
+          <p className="text-center text-xl font-light max-w-3xl">
+            Подкастът &quot;Дълбоката държава&quot; е Алтернативният подкаст. Тук ще чуете за теми,
+            които не се споменават в мейнстрийма, както и за мнения, които са различни от основната
+            гледна точка.
           </p>
           <a
             href="https://www.youtube.com/@user-zn4rd8oj8i"
-            className="button button-green button-header hover:bg-green-900">
+            className="button button-green button-header hover:bg-green-900 mb-5">
             Разбери истината
           </a>
         </section>

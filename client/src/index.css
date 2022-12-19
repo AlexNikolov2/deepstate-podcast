@@ -13,16 +13,18 @@
   .exo-2 {
     font-family: 'Exo 2';
   }
+  .segoe-ui {
+    font-family: Segoe UI;
+  }
   .button {
     @apply font-bold py-2 px-4 rounded;
   }
   .button-green {
     @apply bg-green-700;
   }
-  .image-header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .home-header {
+    background-image: url('./assets/img/home-header.jpeg');
+    background-size: fill;
   }
   .item-title {
     font-size: 31px;
