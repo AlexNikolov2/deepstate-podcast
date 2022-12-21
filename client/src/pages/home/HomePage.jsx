@@ -1,6 +1,7 @@
-import { faComments, faPodcast, faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { faComments, faUserTie } from '@fortawesome/free-solid-svg-icons';
 // import image from '../../assets/img/home-header.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { HomeItem } from './components/HomeComponent';
 
 export const HomePage = () => {
   return (
@@ -27,13 +28,7 @@ export const HomePage = () => {
         </section>
       </section>
       <section className="flex flex-col justify-center items-center gap-20 md:flex-row">
-        <div className="item">
-          <FontAwesomeIcon icon={faPodcast} className="text-6xl text-sky-400" />
-          <p className="item-title">Епизоди</p>
-          <p className="item-text">
-            В този сайт можете да намерите всички епизоди от подкаста &quot;Дълбоката държава&quot;.
-          </p>
-        </div>
+        <HomeItem />
         <div className="item">
           <FontAwesomeIcon icon={faUserTie} className="text-6xl text-sky-400" />
           <p className="item-title">Гости</p>
