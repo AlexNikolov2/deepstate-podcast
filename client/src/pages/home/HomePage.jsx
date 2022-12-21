@@ -8,15 +8,11 @@ export const HomePage = () => {
   useEffect(() => {
     const arr = [];
     data.forEach((i) => {
-      const info = i.data;
-      arr.push({
-        id: i.id,
-        info
-      });
+      arr.push(i);
     });
 
     setItem(arr);
-  }, [items]);
+  }, []);
 
   return (
     <main className="flex flex-col gap-5 mt-5 mb-5">
@@ -43,9 +39,8 @@ export const HomePage = () => {
       </section>
       <section className="flex flex-col justify-center items-center gap-20 md:flex-row">
         {items.map((item) => {
-          return <HomeItem key={item.id} item={item.info} />;
+          return <HomeItem key={item.id} item={item} />;
         })}
-        )
       </section>
     </main>
   );
