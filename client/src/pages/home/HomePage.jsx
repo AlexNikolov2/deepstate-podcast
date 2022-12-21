@@ -1,9 +1,23 @@
-import { faComments, faUserTie } from '@fortawesome/free-solid-svg-icons';
-// import image from '../../assets/img/home-header.jpeg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HomeItem } from './components/HomeComponent';
+import { useState, useEffect } from 'react';
+import { data } from '../../data/item-sample-data';
 
 export const HomePage = () => {
+  const [items, setItem] = useState([]);
+
+  useEffect(() => {
+    const arr = [];
+    data.forEach((i) => {
+      const info = i.data;
+      arr.push({
+        id: i.id,
+        info
+      });
+    });
+
+    setItem(arr);
+  }, [items]);
+
   return (
     <main className="flex flex-col gap-5 mt-5 mb-5">
       <section className="mb-5 segoe-ui">
@@ -28,22 +42,10 @@ export const HomePage = () => {
         </section>
       </section>
       <section className="flex flex-col justify-center items-center gap-20 md:flex-row">
-        <HomeItem />
-        <div className="item">
-          <FontAwesomeIcon icon={faUserTie} className="text-6xl text-sky-400" />
-          <p className="item-title">Гости</p>
-          <p className="item-text">
-            Tук можете да намерите всички информация относно всички, които са били гости в подкаста.
-          </p>
-        </div>
-        <div className="item">
-          <FontAwesomeIcon icon={faComments} className="text-6xl text-sky-400" />
-          <p className="item-title">Форум</p>
-          <p className="item-text">
-            Свободно място за дискусии, където да обсъждате теми, които не се дискутират никъде
-            другаде.
-          </p>
-        </div>
+        {items.map((item) => {
+          return <HomeItem key={item.id} item={item.info} />;
+        })}
+        )
       </section>
     </main>
   );
