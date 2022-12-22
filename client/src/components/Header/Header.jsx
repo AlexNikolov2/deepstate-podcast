@@ -2,6 +2,7 @@ import image from '../../assets/img/Untitled.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const HeaderComponent = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -19,14 +20,14 @@ export const HeaderComponent = () => {
       <div className="flex gap-5 md:hidden">
         <ul className={navbarOpen ? 'md:flex gap-3' : 'hidden'} id="navbar">
           <li>
-            <a href="/" className="text-xl">
+            <Link to="/" className="text-xl">
               Начало
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="text-xl">
+            <Link to="/episodes" className="text-xl">
               Епизоди
-            </a>
+            </Link>
           </li>
           <li>
             <a href="/" className="text-xl">
@@ -41,19 +42,19 @@ export const HeaderComponent = () => {
       <div className="md:flex md:gap-5">
         <ul className="hidden md:flex gap-3" id="navbar">
           <li>
-            <a href="/" className="text-xl">
+            <Link to="/" className="text-xl">
               Начало
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="text-xl">
+            <Link to="/episodes" className="text-xl">
               Епизоди
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="text-xl">
+            <Link href="/" className="text-xl">
               Гости
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
