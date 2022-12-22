@@ -30,9 +30,9 @@ export const HeaderComponent = () => {
             </Link>
           </li>
           <li>
-            <a href="/" className="text-xl">
+            <Link to="/guests" className="text-xl">
               Гости
-            </a>
+            </Link>
           </li>
         </ul>
         <button onClick={() => setNavbarOpen(!navbarOpen)} className="md:hidden">
@@ -52,7 +52,7 @@ export const HeaderComponent = () => {
             </Link>
           </li>
           <li>
-            <Link href="/" className="text-xl">
+            <Link to="/guests" className="text-xl">
               Гости
             </Link>
           </li>
