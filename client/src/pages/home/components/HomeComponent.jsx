@@ -1,9 +1,5 @@
 /* eslint-disable react/prop-types */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import fontawesome from '@fortawesome/fontawesome';
-import { faComments, faPodcast, faUserTie } from '@fortawesome/free-solid-svg-icons';
-
-fontawesome.library.add(faPodcast, faUserTie, faComments);
 
 export const HomeItem = ({ item }) => {
   return (
