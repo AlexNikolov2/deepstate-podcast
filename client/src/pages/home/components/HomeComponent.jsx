@@ -6,7 +6,6 @@ import { faComments, faPodcast, faUserTie } from '@fortawesome/free-solid-svg-ic
 fontawesome.library.add(faPodcast, faUserTie, faComments);
 
 export const HomeItem = ({ item }) => {
-  console.log(item);
   return (
     <div className="item">
       <FontAwesomeIcon icon={item.icon} className="text-6xl text-sky-400" />
