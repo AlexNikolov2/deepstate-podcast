@@ -1,4 +1,4 @@
-import { HomeItem } from './components/HomeComponent';
+import { HomeItem } from './components/HomeItem';
 import { useState, useEffect } from 'react';
 import { data } from '../../data/item-sample-data';
 
