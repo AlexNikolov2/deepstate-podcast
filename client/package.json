@@ -14,6 +14,7 @@
     "@types/jest": "^29.2.4",
     "autoprefixer": "^9.8.6",
     "axios": "^1.2.1",
+    "dotenv": "^16.0.3",
     "postcss-cli": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
