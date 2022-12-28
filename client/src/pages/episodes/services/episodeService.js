@@ -10,5 +10,4 @@ export const getAllEpisodes = () => {
   })
     .then((response) => response.json())
     .then((responseData) => console.log(responseData));
-  console.log(process.env.REACT_APP_KEY);
 };
