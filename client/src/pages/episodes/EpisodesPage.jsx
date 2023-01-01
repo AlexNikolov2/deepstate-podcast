@@ -24,6 +24,7 @@ export const EpisodePage = () => {
 
   return (
     <section>
+      <p>Всички епизоди</p>
       {episodes.map((item) => {
         console.log(item);
         return <EpisodeItem key={item.id} item={item} />;
