@@ -1,3 +1,7 @@
 export const GuestPage = () => {
-  return <p>Guest page works!</p>;
+  return (
+    <main>
+      <section id="guest-page">This will be the guest page.</section>
+    </main>
+  );
 };
