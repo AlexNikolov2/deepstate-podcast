@@ -1,38 +1,31 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable space-before-blocks */
-/* eslint-disable space-before-function-paren */
 import { EpisodeItem } from './components/EpisodeComponent';
 import { useState, useEffect } from 'react';
+import { parse } from 'rss-to-json';
 
 export const EpisodePage = () => {
   const [episodes, setEpisodes] = useState([]);
 
-  /* useEffect(async () => {
+  useEffect(() => {
     const arr = [];
 
-    const link = 'https://api.spotify.com/v1/shows/4j4UH7lzr8UJhk3MvoCpEZ/episodes';
+    const link = 'https://anchor.fm/s/bbcba154/podcast/rss';
 
-    async function getEpisodes() {
-      const response = await fetch(link, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: 'Bearer ' + process.env.REACT_APP_KEY
-        }
+    parse(link).then((response) => {
+      response.items.forEach((item) => {
+        arr.push(item);
       });
-
-      return response.json();
-    }
-
-    console.log(await getEpisodes());
+    });
 
     setEpisodes(arr);
-  }, []); */
+  }, []);
 
   return (
     <section>
       <p>Всички епизоди</p>
-      {<EpisodeItem />};
+      {episodes.forEach((episode) => {
+        console.log(episode);
+        return <EpisodeItem key={episodes[episode]} data={episode} />;
+      })}
     </section>
   );
 };
