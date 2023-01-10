@@ -5,12 +5,13 @@ import { parse } from 'rss-to-json';
 export const EpisodePage = () => {
   const [episodes, setEpisodes] = useState([]);
 
-  useEffect(() => {
+  // eslint-disable-next-line space-before-function-paren
+  useEffect(async () => {
     const arr = [];
 
     const link = 'https://anchor.fm/s/bbcba154/podcast/rss';
 
-    parse(link).then((response) => {
+    await parse(link).then((response) => {
       response.items.forEach((item) => {
         arr.push(item);
       });
@@ -22,9 +23,9 @@ export const EpisodePage = () => {
   return (
     <section>
       <p>Всички епизоди</p>
-      {episodes.forEach((episode) => {
+      {episodes.map((episode) => {
         console.log(episode);
-        return <EpisodeItem key={episodes[episode]} data={episode} />;
+        return <EpisodeItem key={episode.itunes_episode} data={episode} />;
       })}
     </section>
   );

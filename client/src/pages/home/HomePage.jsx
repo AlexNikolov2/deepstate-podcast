@@ -39,6 +39,7 @@ export const HomePage = () => {
       </section>
       <section className="flex flex-col justify-center items-center gap-20 md:flex-row">
         {items.map((item) => {
+          console.log(item);
           return <HomeItem key={item.id} item={item} />;
         })}
       </section>
