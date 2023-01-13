@@ -3,30 +3,38 @@ import { useState, useEffect } from 'react';
 import { parse } from 'rss-to-json';
 
 export const EpisodePage = () => {
+  // const [isLoading, ]
   const [episodes, setEpisodes] = useState([]);
 
   // eslint-disable-next-line space-before-function-paren
-  useEffect(async () => {
+  useEffect(() => {
     const arr = [];
 
-    const link = 'https://anchor.fm/s/bbcba154/podcast/rss';
-
-    await parse(link).then((response) => {
+    // eslint-disable-next-line space-before-function-paren
+    const fetchEpisodes = async () => {
+      const response = await parse('https://anchor.fm/s/bbcba154/podcast/rss');
       response.items.forEach((item) => {
         arr.push(item);
       });
-    });
 
-    setEpisodes(arr);
+      setEpisodes(arr);
+    };
+
+    fetchEpisodes();
+
+    /*  */
+
+    // setEpisodes(fetchEpisodes());
   }, []);
 
   return (
     <section>
       <p>Всички епизоди</p>
-      {episodes.map((episode) => {
-        console.log(episode);
-        return <EpisodeItem key={episode.itunes_episode} data={episode} />;
-      })}
+      {episodes &&
+        episodes.map((episode) => {
+          console.log(episode);
+          return <EpisodeItem key={episode.itunes_episode} data={episode} />;
+        })}
     </section>
   );
 };
