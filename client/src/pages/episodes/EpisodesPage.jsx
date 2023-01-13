@@ -21,10 +21,6 @@ export const EpisodePage = () => {
     };
 
     fetchEpisodes();
-
-    /*  */
-
-    // setEpisodes(fetchEpisodes());
   }, []);
 
   return (
