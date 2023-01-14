@@ -13,6 +13,7 @@ export const EpisodePage = () => {
     // eslint-disable-next-line space-before-function-paren
     const fetchEpisodes = async () => {
       const response = await parse('https://anchor.fm/s/bbcba154/podcast/rss');
+      console.log(response);
       response.items.forEach((item) => {
         arr.push(item);
       });
@@ -28,7 +29,7 @@ export const EpisodePage = () => {
   return (
     <section className="mx-5">
       <p className="text-6xl font-bold text-center py-8">Всички епизоди</p>
-      <section id="items" className="flex flex-row gap-5">
+      <section id="items" className="flex flex-row gap-10">
         {episodes &&
           episodes.map((episode) => {
             console.log(episode);
