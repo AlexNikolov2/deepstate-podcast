@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.6.0",
     "react-router-dom": "^6.6.0",
+    "react-rss-podcast-player": "^1.0.0",
     "react-scripts": "^5.0.1",
     "react-spotify-web-playback": "^0.10.1",
     "rss-to-json": "^2.1.0",
