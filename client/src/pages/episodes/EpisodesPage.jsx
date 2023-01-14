@@ -17,6 +17,8 @@ export const EpisodePage = () => {
         arr.push(item);
       });
 
+      arr.reverse();
+
       setEpisodes(arr);
     };
 
@@ -26,11 +28,13 @@ export const EpisodePage = () => {
   return (
     <section>
       <p>Всички епизоди</p>
-      {episodes &&
-        episodes.map((episode) => {
-          console.log(episode);
-          return <EpisodeItem key={episode.itunes_episode} data={episode} />;
-        })}
+      <section id="items" className="flex flex-row gap-5">
+        {episodes &&
+          episodes.map((episode) => {
+            console.log(episode);
+            return <EpisodeItem key={episode.itunes_episode} data={episode} />;
+          })}
+      </section>
     </section>
   );
 };
