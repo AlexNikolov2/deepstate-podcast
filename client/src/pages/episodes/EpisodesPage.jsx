@@ -28,7 +28,11 @@ export const EpisodePage = () => {
 
   return (
     <section className="episode-header pb-7">
-      <p className="text-6xl font-bold text-center py-12 pb-20 mx-5">Всички епизоди</p>
+      <p className="text-6xl font-bold text-center pb-5 mx-5">Всички епизоди</p>
+      <p className="text-xl font-medium text-center pb-20 mx-5">
+        Всички епизоди от подкаста &quot;Дълбоката държава&quot; можете да слушате чрез платформата
+        Anchor.
+      </p>
       <section id="items" className="flex flex-col md:flex-row gap-10 mx-5">
         {episodes &&
           episodes.map((episode) => {
