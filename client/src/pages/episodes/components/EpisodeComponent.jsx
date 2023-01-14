@@ -5,8 +5,8 @@ import { faHeadphones } from '@fortawesome/free-solid-svg-icons';
 
 export const EpisodeItem = ({ data }) => {
   return (
-    <section className="flex flex-col gap-7 justify-center content-center text-center">
-      <div className="flex items-center gap-3">
+    <section className="flex flex-col gap-7 justify-center content-center text-center border-white border-4 rounded-xl p-3">
+      <div className="flex flex-col md:flex-row items-center gap-3">
         <img src={data.itunes_image.href} alt="" className="w-32" />
         <p className="text-3xl font-bold">{data.title}</p>
       </div>
