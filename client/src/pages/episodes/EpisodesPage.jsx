@@ -26,8 +26,8 @@ export const EpisodePage = () => {
   }, []);
 
   return (
-    <section>
-      <p>Всички епизоди</p>
+    <section className="mx-5">
+      <p className="text-6xl font-bold text-center py-8">Всички епизоди</p>
       <section id="items" className="flex flex-row gap-5">
         {episodes &&
           episodes.map((episode) => {
