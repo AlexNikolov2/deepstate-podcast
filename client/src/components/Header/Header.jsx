@@ -10,7 +10,8 @@ export const HeaderComponent = () => {
   return (
     <header
       className={
-        'flex justify-around items-center gap-4' + (navbarOpen ? ' flex-col' : ' flex-row')
+        'md:mx-10 flex justify-between items-center gap-4' +
+        (navbarOpen ? ' flex-col' : ' flex-row')
       }
       id="header">
       <div id="left" className="flex items-center gap-2">
