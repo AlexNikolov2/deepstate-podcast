@@ -1,8 +1,9 @@
 import image from '../../assets/img/Untitled.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Spin as Hamburger } from 'hamburger-react';
 
 export const HeaderComponent = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -18,7 +19,7 @@ export const HeaderComponent = () => {
         <img src={image} alt="" className="w-20" />
         <p className="text-4xl">Дълбоката държава</p>
         <button onClick={() => setNavbarOpen(!navbarOpen)} className="md:hidden relative right-5">
-          <FontAwesomeIcon icon={faBars} className="text-white text-4xl" data-testid="icon" />
+          <Hamburger toggled={navbarOpen} toggle={setNavbarOpen} />
         </button>
       </div>
       <div className="flex gap-5 md:hidden">
