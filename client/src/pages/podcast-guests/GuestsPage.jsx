@@ -1,6 +1,19 @@
 import { GuestComponent } from './components/GuestComponent';
+import { useState, useEffect } from 'react';
+import { data } from '../../data/guest-sample-data';
 
 export const GuestPage = () => {
+  const [items, setItem] = useState([]);
+
+  useEffect(() => {
+    const arr = [];
+    data.forEach((i) => {
+      arr.push(i);
+    });
+
+    setItem(arr);
+  }, []);
+
   return (
     <section
       id="guest-page"
@@ -12,7 +25,10 @@ export const GuestPage = () => {
       <div
         id="guest-items"
         className="flex flex-col md:flex-row gap-16 justify-center items-center">
-        <GuestComponent />
+        {items.map((item) => {
+          console.log(item);
+          return <GuestComponent key={item.id} item={item} />;
+        })}
       </div>
     </section>
   );

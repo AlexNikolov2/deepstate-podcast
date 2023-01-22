@@ -1,11 +1,11 @@
-import image from '../../assets/img/sasho-negara.jpg';
+/* eslint-disable react/prop-types */
 
-export const GuestComponent = () => {
+export const GuestComponent = ({ item }) => {
   return (
     <section id="guest" className="flex items-center justify-center gap-3 flex-col">
-      <img src={image} alt="" className="rounded-full w-[256px] border-[14px]" />
-      <p className="text-4xl font-bold">Александър Стойчев</p>
-      <p className="text-xl text-slate-400">Е1: Какво е Дълбоката Държава?</p>
+      <img src={item.img} alt="" className="rounded-full w-[256px] border-[14px]" />
+      <p className="text-4xl font-bold">{item.name}</p>
+      <p className="text-xl text-slate-400">{item.episodes}</p>
     </section>
   );
 };
