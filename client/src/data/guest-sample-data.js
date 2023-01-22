@@ -7,7 +7,7 @@ export const data = [
   },
   {
     id: 2,
-    img: '../assets/img/sasho-negara.jpg',
+    img: '../assets/img/richard.png',
     name: 'Александър Стойчев',
     episodes: ['Е1: Какво е Дълбоката Държава?']
   },
