@@ -1,6 +1,7 @@
 import no1 from '../assets/img/no1.jpg';
 import no2 from '../assets/img/no2.png';
 import no3 from '../assets/img/no3.png';
+import no4 from '../assets/img/no4.jpg';
 
 export const data = [
   {
@@ -20,5 +21,11 @@ export const data = [
     img: no3,
     name: 'Борис Гичев',
     episodes: ['Е3: Технологичното робство']
+  },
+  {
+    id: 4,
+    img: no4,
+    name: 'Тамер Рамадан',
+    episodes: ['Е4: Нов Световен Ред, част I : Великото зануляване']
   }
 ];
