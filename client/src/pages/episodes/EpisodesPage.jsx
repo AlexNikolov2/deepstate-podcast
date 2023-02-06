@@ -33,7 +33,9 @@ export const EpisodePage = () => {
         Всички епизоди от подкаста &quot;Дълбоката държава&quot; можете да слушате чрез платформата
         Anchor.
       </p>
-      <section id="items" className="flex flex-col tablet:flex-row gap-10 mx-5">
+      <section
+        id="items"
+        className="flex flex-col tablet:flex-row gap-10 mx-5 flex-wrap justify-center items-center">
         {episodes &&
           episodes.map((episode) => {
             console.log(episode);
